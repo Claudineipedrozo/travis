@@ -21,7 +21,7 @@ public class TrianguloBasicoUnitTest {
 		assertEquals("O triângulo é Isósceles", Triangulo.calcular(3, 6, 6));
 	}
 	@Test
-	public void testeTrianguloIsosceles() throws TrianguloNaoPreenchidoException {
+	public void testeTrianguloErro() throws TrianguloNaoPreenchidoException {
 		assertEquals("O triângulo é Isósceles", Triangulo.calcular(-3, 6, 6));
 	}
 
