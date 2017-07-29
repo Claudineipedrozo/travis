@@ -15,9 +15,6 @@ addons:
 before_install:
   - git submodule update --init --recursive
 
-before_script:
-  - python etc/travis-sonatype.py
-
 install:
  - pip install coveralls
  
