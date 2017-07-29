@@ -13,16 +13,16 @@ addons:
       - python-yaml
 
 before_install:
-  - git submodule update --init --recursive
+ - git submodule update --init --recursive
 
 install:
  - pip install coveralls
  
 script:
-  - coverage run --source=src teste.java
+ - coverage run --source=src teste.java
 
 after_success:
-  - coveralls
+ - coveralls
 
 after_success:
-  - mvn clean cobertura:cobertura org.eluder.coveralls:coveralls-maven-plugin:report
+ - mvn clean cobertura:cobertura org.eluder.coveralls:coveralls-maven-plugin:report
