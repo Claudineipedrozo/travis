@@ -19,7 +19,7 @@ install:
  - pip install coveralls
  
 script:
- - coverage run --source=src/teste/java/br/com/qualister/triangulo
+ - coverage run --source=travis/src/teste/java/br/com/qualister/triangulo
 
 after_success:
  - coveralls
